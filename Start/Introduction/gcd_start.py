@@ -4,7 +4,13 @@
 
 
 def gcd(a, b):
-    pass
+    r = 1
+    while r != 0:
+        r = a % b
+        if r == 0:
+            return b
+        a = b
+        b = r
 
 
 # try out the function with a few examples
